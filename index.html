@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Based Air Quality Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 Air Quality Monitoring System</h1>
+    <p>Cloud-Based Environmental Monitoring Dashboard</p>
+</header>
+
+<nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#monitoring">Monitoring</a>
+    <a href="#alerts">Alerts</a>
+</nav>
+
+<section class="hero">
+    <h2>Real-Time Air Quality Monitoring</h2>
+    <p>Monitor air pollution levels using a cloud-based dashboard.</p>
+</section>
+
+<section id="dashboard" class="container">
+
+    <h2>📊 Air Quality Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🌫️</div>
+            <h3>Air Quality Index</h3>
+            <p id="aqi">72</p>
+            <span id="aqiStatus">Moderate</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">💨</div>
+            <h3>PM2.5</h3>
+            <p id="pm25">35</p>
+            <span>µg/m³</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏭</div>
+            <h3>CO Level</h3>
+            <p id="co">4.2</p>
+            <span>ppm</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌡️</div>
+            <h3>Temperature</h3>
+            <p id="temperature">29°C</p>
+            <span>Normal</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="monitoring" class="container">
+
+    <h2>📍 Monitoring Locations</h2>
+
+    <div class="location-box">
+
+        <div class="location">
+            <h3>📍 Chennai</h3>
+            <p>AQI: <strong>72</strong></p>
+            <p class="moderate">Moderate</p>
+        </div>
+
+        <div class="location">
+            <h3>📍 Coimbatore</h3>
+            <p>AQI: <strong>48</strong></p>
+            <p class="good">Good</p>
+        </div>
+
+        <div class="location">
+            <h3>📍 Madurai</h3>
+            <p>AQI: <strong>91</strong></p>
+            <p class="moderate">Moderate</p>
+        </div>
+
+    </div>
+
+    <button onclick="updateData()">🔄 Update Air Quality</button>
+
+</section>
+
+<section id="alerts" class="container">
+
+    <h2>🚨 Air Quality Alerts</h2>
+
+    <div id="alertBox" class="alert">
+        <h3>✅ Air Quality is Normal</h3>
+        <p>No critical pollution alert at the moment.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Cloud-Based Air Quality Monitoring System</p>
+    <p>Cloud Computing Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
